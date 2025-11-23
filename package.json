@@ -19,6 +19,7 @@
     "@motiadev/plugin-observability": "^0.12.0-beta.157",
     "@motiadev/plugin-states": "^0.12.0-beta.157",
     "motia": "^0.12.0-beta.157",
+    "openai": "^6.9.1",
     "uuid": "^13.0.0",
     "zod": "^4.1.12"
   },

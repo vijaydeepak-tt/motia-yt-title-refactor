@@ -1,4 +1,4 @@
-import { EventConfig, EventHandler } from "motia";
+import { EventConfig, Handlers } from "motia";
 
 // Step 3: Retrieve the latest 5 videos from the channelID
 export const config: EventConfig = {
@@ -27,7 +27,7 @@ const fetchVideos = async (channelId: string, apiKey: string) => {
   return videosData;
 };
 
-export const handler: EventHandler["RetrieveVideos"] = async (eventData: any, { emit, logger, state }: any) => {
+export const handler: Handlers["RetrieveVideos"] = async (eventData: any, { emit, logger, state }: any) => {
   let jobId: string | undefined;
   let email: string | undefined;
 

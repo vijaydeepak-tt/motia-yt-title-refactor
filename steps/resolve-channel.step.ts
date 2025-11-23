@@ -1,4 +1,4 @@
-import { EventConfig, EventHandler } from "motia";
+import { EventConfig, Handlers } from "motia";
 
 // Step 2: Resolve the channel name to get the channel ID from the youtube data API
 export const config: EventConfig = {
@@ -21,7 +21,7 @@ const fetchChannelData = async (channel: string, apiKey: string) => {
   return searchData;
 };
 
-export const handler: EventHandler["ResolveChannel"] = async (eventData: any, { emit, logger, state }: any) => {
+export const handler: Handlers["ResolveChannel"] = async (eventData: any, { emit, logger, state }: any) => {
   let jobId: string | undefined;
   let email: string | undefined;
 
