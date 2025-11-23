@@ -1,0 +1,9 @@
+node_modules
+python_modules
+.venv
+.env
+venv
+.motia
+.mermaid
+dist
+*.pyc
